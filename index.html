@@ -1,58 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acara 1 | HTML CSS</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Kota Jambi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Deskripsi">Deskripsi</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#Penduduk">Jumlah Penduduk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Kecamatan">Kecamatan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Link">Website</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Photo&Video">Photo & Video</a>
+        </li>
+      </ul>
 
+    </div>
+  </div>
+</nav>
 
-<link rel="stylesheet" href="app.css">
+<main class="container mt-3">
+    <!-- title -->
+    <div class="alert alert-primary" role="alert">
+        <h2>Kota Jambi</h2>
+        <h5>Jambi</h5>
+    </div>
 
-</head>
+    <!-- description -->
+    <div class="card" id="Deskripsi">
+        <div class="card-header">
+            Deskripsi
+    </div>
+        <div class="card-body">
+        <p class="card-text">Kota Jambi (Melayu: كوتا جمبي) adalah sebuah kota di pulau Sumatra sekaligus merupakan ibu kota dari provinsi Jambi, Indonesia. Kota ini dibelah oleh Sungai Batanghari yang merupakan sungai terpanjang di pulau Sumatra,[7] kedua kawasan tersebut terhubung oleh Jembatan Gentala Arasy, jembatan pedestrian di atas sungai pertama di Indonesia yang memiliki kontur meliuk seperti huruf S.[8] Kota Jambi merupakan enklave dari kabupaten Muaro Jambi yang memiliki luas sekitar 205,38 km² dengan jumlah penduduk pertengahan tahun 2024 sebanyak 641.022 jiwa.</p>
+        <p class="card-text">Kota Jambi berdiri pada tanggal 28 Mei 1401 berdasarkan peraturan daerah Kota Jambi nomor 3 tahun 2014, penetapan hari jadi tersebut tidak lepas dari momentum sejarah ditemukannya Tanah Pilih oleh Raja Jambi, Putri Selaras Pinang Masak bersama sepasang angsa. Berlokasi disepanjang rumah dinas komandan resort militer sampai ke Masjid Agung Al-Falah.[9] Kemudian dibentuk sebagai pemerintah daerah otonom kotamadya berdasarkan ketetapan Gubernur Sumatra nomor 103/1946, tanggal 17 Mei 1946.</p>
+        </div>
+    </div>
 
-<body>
-    <main>
-        <!-- Judul -->
-        <h1 class="p2">Jambi</h1>
+    <!-- population -->
+    <div class="card mt-3" id="Penduduk">
+        <div class="card-header">
+            Penduduk
+        </div>
+            <div class="card-body">
+                <table class="table table-light table-striped-columns">
+                    <tr>
+                        <td>No</td>
+                        <td>Jenis Kelamin</td>
+                        <td>Jumlah</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Laki-laki</td>
+                        <td>300.566 jiwa</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Perempuan</td>
+                        <td>297.537 jiwa</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Total</td>
+                        <td>598.103 jiwa</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
 
-        <!-- Sub Judul -->
-        <h3>Provinsi Jambi</h3>
-        <hr>
+    <!-- district -->
 
-        <!-- Deskripsi -->
-        <p id="p1">Kota Jambi (Melayu: كوتا جمبي) adalah sebuah kota di pulau Sumatra sekaligus merupakan ibu kota dari provinsi Jambi, Indonesia. Kota ini dibelah oleh Sungai Batanghari yang merupakan sungai terpanjang di pulau Sumatra,[7] kedua kawasan tersebut terhubung oleh Jembatan Gentala Arasy, jembatan pedestrian di atas sungai pertama di Indonesia yang memiliki kontur meliuk seperti huruf S.[8] Kota Jambi merupakan enklave dari kabupaten Muaro Jambi yang memiliki luas sekitar 205,38 km² dengan jumlah penduduk pertengahan tahun 2024 sebanyak 641.022 jiwa.</p>
-        <p class="p2">Kota Jambi berdiri pada tanggal 28 Mei 1401 berdasarkan peraturan daerah Kota Jambi nomor 3 tahun 2014, penetapan hari jadi tersebut tidak lepas dari momentum sejarah ditemukannya Tanah Pilih oleh Raja Jambi, Putri Selaras Pinang Masak bersama sepasang angsa. Berlokasi disepanjang rumah dinas komandan resort militer sampai ke Masjid Agung Al-Falah.[9] Kemudian dibentuk sebagai pemerintah daerah otonom kotamadya berdasarkan ketetapan Gubernur Sumatra nomor 103/1946, tanggal 17 Mei 1946.</p>
-        <hr>
-
-        <!-- Tabel -->
-         <h4>Jumlah penduduk</h4>
-         
-         <table>
-            <tr>
-                <th>No</th>
-                <th>Jenis Kelamin</th>
-                <th>jumlah</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Laki-laki</td>
-                <td>300.566 jiwa</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Perempuan</td>
-                <td>297.537 jiwa</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Total</td>
-                <td>598.103 jiwa</td>
-            </tr>
-         </table>
-
-         <!-- List Kecamatan -->
-          <h4>Kecamatan</h4>
-          <ol>
+    <div class="card mt-3" id="Kecamatan">
+        <div class="card-header">
+            Kecamatan
+    </div>
+        <div class="card-body">
+            <ol>
             <li>Telanaipura</li>
             <li>Jambi Selatan</li>
             <li>Jambi Timur</li>
@@ -65,20 +105,39 @@
             <li>Paal Merah</li>
             <li>Danau Sipin</li>
           </ol>
+    </div>
 
-          <hr>
+    <!-- link -->
 
-          <!---link-->
-          <a href="https://jambikota.go.id/" target="_blank" rel="noopener noreferrer" title="Klik untuk membuka Website">Website Pemkot Jambi</a>
+    <div class="card mt-3" id="Link">
+        <div class="card-header">
+            Link
+    </div>
+        <div class="card-body">
+            <a href="https://jambikota.go.id/" target="_blank" rel="noopener noreferrer" title="Klik untuk membuka Website">Website Pemkot Jambi</a>
+        </div>
+    </div>
 
-          <hr>
+    <!-- Photo & Video -->
 
-          <img src="https://assets.kompasiana.com/items/album/2021/03/22/200414122710jambi-6057eca08ede483a962b6bd2.jpg?t=o&v=740&x=416" alt="" width="500px" title="Sungai Batanghari">
-    
-          <hr>
+    <div class="card mt-3" id="Photo&Video">
+        <div class="card-header">
+            Photo & Video
+    </div>
+        <div class="card-body">
+            <img src="https://assets.kompasiana.com/items/album/2021/03/22/200414122710jambi-6057eca08ede483a962b6bd2.jpg?t=o&v=740&x=416" alt="" width="500px" title="Sungai Batanghari">
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EgizRW_zl4Q?si=4RNoHt34EkQTk5XZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-footer mt-3">
+            
+    </div>
+    </div>
 
-          <!---iframe-->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/EgizRW_zl4Q?si=4RNoHt34EkQTk5XZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </main>
-</body>
+
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
